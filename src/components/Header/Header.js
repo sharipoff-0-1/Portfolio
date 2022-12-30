@@ -13,6 +13,7 @@ import {
   Div2,
   Div3,
   NavLink,
+  LogoLink,
   SocialIcons,
   Span,
 } from "./HeaderStyles";
@@ -20,19 +21,18 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <NavLink href="/">
+      <LogoLink href="/">
         <a
           style={{
             display: "flex",
             alignItems: "center",
             color: "white",
-            marginBottom: "20px",
           }}
         >
           <DiCssdeck size="3rem" />
           <Span>Portfolio</Span>
         </a>
-      </NavLink>
+      </LogoLink>
     </Div1>
     <Div2>
       <li>
