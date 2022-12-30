@@ -49,16 +49,49 @@ export const Div3 = styled.div`
   }
 `;
 
+export const LogoLink = styled.a`
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+`;
+
 // Navigation Links
 export const NavLink = styled.a`
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  transition: all 0.2s;
   font-size: 1.8rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: #00dab0;
     opacity: 1;
     cursor: pointer;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: #00dab0;
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+  }
+  &:hover::after {
+    right: 0;
+    height: 2px;
+    background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
