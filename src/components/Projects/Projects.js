@@ -24,29 +24,31 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
-    <GridContainer>
+    <GridContainer flex>
       {projects.map(
         ({ title, description, image, tags, source, visit, id }) => (
           <BlogCard key={id}>
             <Img src={image} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
+              <TitleContent>
+                <HeaderThree title="true">{title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
 
-            <UtilityList>
-              <ExternalLinks href={source}>Code</ExternalLinks>
-              <ExternalLinks href={visit}>Live</ExternalLinks>
-            </UtilityList>
+              <UtilityList>
+                <ExternalLinks href={source}>Code</ExternalLinks>
+                <ExternalLinks href={visit}>Live</ExternalLinks>
+              </UtilityList>
+            </div>
           </BlogCard>
         )
       )}

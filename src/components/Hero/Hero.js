@@ -13,16 +13,15 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Welcome to my <br />
-        Personal Portfolio
+        Portfolio
       </SectionTitle>
       <SectionText>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-        voluptatum repudiandae iste minus unde eaque.
+        I'm a FrontEnd developer based in Warsaw, Poland
       </SectionText>
       <Button
         onClick={() => (window.location = "mailto:sharipoff.dev@gmail.com")}
       >
-        Contact me
+        Get in touch
       </Button>
     </LeftSection>
   </Section>
