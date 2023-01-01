@@ -29,13 +29,13 @@ const Footer = () => {
 
         <SocialIconsContainer>
           <SocialContainer>
-            <SocialIcons>
+            <SocialIcons href="https://github.com/sharipoff-0-1">
               <AiFillGithub size="3rem" />
             </SocialIcons>
-            <SocialIcons>
+            <SocialIcons href="https://www.instagram.com/sharipoff.shakh/">
               <AiFillInstagram size="3rem" />
             </SocialIcons>
-            <SocialIcons>
+            <SocialIcons href="https://www.linkedin.com/in/shakhzod-sharipov-854872258/">
               <AiFillLinkedin size="3rem" />
             </SocialIcons>
           </SocialContainer>
